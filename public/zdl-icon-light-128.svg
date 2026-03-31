@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#FFFEF9"/>
+  <g transform="translate(14, 14)">
+    <!-- Shadow -->
+    <rect x="5" y="5" width="88" height="88" fill="#0F0E0C" rx="0"/>
+    <!-- Box -->
+    <rect x="0" y="0" width="88" height="88" fill="#FFFEF9" stroke="#0F0E0C" stroke-width="3" rx="0"/>
+    <!-- Z -->
+    <text x="22" y="64" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" fill="#0F0E0C">Z</text>
+    <!-- Dots -->
+    <circle cx="68" cy="30" r="5" fill="#E85D3A"/>
+    <circle cx="68" cy="45" r="5" fill="#FFB800"/>
+    <circle cx="68" cy="60" r="5" fill="#7B61FF"/>
+  </g>
+</svg>

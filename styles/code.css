@@ -1,0 +1,70 @@
+/* ZDL Code Block Styles for Slidev */
+
+/* Shiki code blocks */
+.slidev-layout .shiki,
+.slidev-layout pre {
+  font-family: var(--zdl-font-mono);
+  border: var(--zdl-border-stamp) solid var(--zdl-text);
+  box-shadow: var(--zdl-shadow-stamp);
+  border-radius: var(--zdl-radius-none);
+  padding: var(--zdl-space-5);
+  margin: var(--zdl-space-4) 0;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* Light mode code background */
+.slidev-layout .shiki,
+.slidev-layout .shiki span {
+  background-color: var(--zdl-color-parchment) !important;
+}
+
+:root.dark .slidev-layout .shiki,
+:root.dark .slidev-layout .shiki span {
+  background-color: var(--zdl-color-ink) !important;
+}
+
+/* Code block line numbers */
+.slidev-layout .shiki .line::before {
+  color: var(--zdl-text-muted);
+  font-size: var(--zdl-text-xs);
+}
+
+/* Code block hover — accent shadow */
+.slidev-layout .shiki:hover,
+.slidev-layout pre:hover {
+  box-shadow: var(--zdl-shadow-stamp-accent);
+}
+
+/* Slidev code block header (filename label) */
+.slidev-code .slidev-code-file-name {
+  font-family: var(--zdl-font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--zdl-tracking-stamp);
+  font-weight: var(--zdl-weight-medium);
+  font-size: var(--zdl-text-xs);
+  color: var(--zdl-text-muted);
+  border-bottom: var(--zdl-border-medium) solid var(--zdl-border);
+  padding-bottom: var(--zdl-space-2);
+  margin-bottom: var(--zdl-space-3);
+}
+
+/* Line highlighting */
+.slidev-layout .shiki .highlighted {
+  background-color: rgba(123, 97, 255, 0.1);
+  border-left: var(--zdl-border-stamp) solid var(--zdl-color-aura);
+  margin-left: calc(-1 * var(--zdl-space-5));
+  padding-left: calc(var(--zdl-space-5) - var(--zdl-border-stamp));
+  margin-right: calc(-1 * var(--zdl-space-5));
+  padding-right: var(--zdl-space-5);
+}
+
+/* Diff highlighting */
+.slidev-layout .shiki .diff.add {
+  background-color: rgba(45, 159, 111, 0.15);
+}
+
+.slidev-layout .shiki .diff.remove {
+  background-color: rgba(232, 93, 58, 0.15);
+}

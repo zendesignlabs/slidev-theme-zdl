@@ -1,0 +1,101 @@
+/* ZDL Design Tokens for Slidev */
+
+:root {
+  /* Brand Colors */
+  --zdl-color-aura: #7B61FF;
+  --zdl-color-spark: #FFB800;
+  --zdl-color-ember: #E85D3A;
+
+  /* Neutral Colors */
+  --zdl-color-ink: #0F0E0C;
+  --zdl-color-parchment: #FFFEF9;
+  --zdl-color-stone: #5A5850;
+  --zdl-color-fog: #9A9790;
+  --zdl-color-dust: #E8E6E1;
+
+  /* Semantic Colors */
+  --zdl-color-success: #2D9F6F;
+  --zdl-color-warning: #FFB800;
+  --zdl-color-error: #E85D3A;
+  --zdl-color-info: #7B61FF;
+
+  /* Typography */
+  --zdl-font-primary: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --zdl-font-mono: 'Space Mono', ui-monospace, monospace;
+
+  --zdl-text-xs: 11px;
+  --zdl-text-sm: 13px;
+  --zdl-text-base: 16px;
+  --zdl-text-md: 20px;
+  --zdl-text-lg: 28px;
+  --zdl-text-xl: 36px;
+  --zdl-text-2xl: 48px;
+  --zdl-text-display: 64px;
+
+  --zdl-weight-light: 300;
+  --zdl-weight-regular: 400;
+  --zdl-weight-medium: 500;
+  --zdl-weight-semibold: 600;
+  --zdl-weight-bold: 700;
+
+  --zdl-tracking-tight: -0.02em;
+  --zdl-tracking-normal: 0;
+  --zdl-tracking-wide: 0.05em;
+  --zdl-tracking-stamp: 0.15em;
+
+  --zdl-leading-tight: 1.1;
+  --zdl-leading-normal: 1.5;
+  --zdl-leading-relaxed: 1.75;
+
+  /* Spacing (4px grid) */
+  --zdl-space-1: 4px;
+  --zdl-space-2: 8px;
+  --zdl-space-3: 12px;
+  --zdl-space-4: 16px;
+  --zdl-space-5: 20px;
+  --zdl-space-6: 24px;
+  --zdl-space-8: 32px;
+  --zdl-space-10: 40px;
+  --zdl-space-12: 48px;
+  --zdl-space-16: 64px;
+
+  /* Border Radius */
+  --zdl-radius-none: 0px;
+  --zdl-radius-sm: 2px;
+  --zdl-radius-md: 8px;
+  --zdl-radius-full: 9999px;
+
+  /* Shadows */
+  --zdl-shadow-stamp: 4px 4px 0px 0px var(--zdl-shadow-color);
+  --zdl-shadow-stamp-lg: 6px 6px 0px 0px var(--zdl-shadow-color);
+  --zdl-shadow-stamp-accent: 4px 4px 0px 0px var(--zdl-color-aura);
+  --zdl-shadow-soft: 0px 2px 8px 0px rgba(15, 14, 12, 0.08);
+
+  /* Borders */
+  --zdl-border-thin: 1px;
+  --zdl-border-medium: 2px;
+  --zdl-border-stamp: 3px;
+
+  /* Three-dot signature */
+  --zdl-dot-1: #E85D3A;
+  --zdl-dot-2: #FFB800;
+  --zdl-dot-3: #7B61FF;
+  --zdl-dot-size: 10px;
+  --zdl-dot-gap: 5px;
+
+  /* Semantic mappings (light mode) */
+  --zdl-bg: var(--zdl-color-parchment);
+  --zdl-text: var(--zdl-color-ink);
+  --zdl-text-muted: var(--zdl-color-stone);
+  --zdl-border: var(--zdl-color-dust);
+  --zdl-shadow-color: var(--zdl-color-ink);
+}
+
+/* Slidev dark mode uses :root.dark */
+:root.dark {
+  --zdl-bg: var(--zdl-color-ink);
+  --zdl-text: var(--zdl-color-parchment);
+  --zdl-text-muted: var(--zdl-color-fog);
+  --zdl-border: var(--zdl-color-stone);
+  --zdl-shadow-color: var(--zdl-color-parchment);
+}

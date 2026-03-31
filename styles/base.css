@@ -1,0 +1,134 @@
+/* ZDL Base Styles for Slidev */
+
+/* Slide container */
+.slidev-layout {
+  background: var(--zdl-bg);
+  color: var(--zdl-text);
+  font-family: var(--zdl-font-primary);
+  font-weight: var(--zdl-weight-regular);
+  line-height: var(--zdl-leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  font-weight: var(--zdl-weight-bold);
+  letter-spacing: var(--zdl-tracking-tight);
+  line-height: var(--zdl-leading-tight);
+  color: var(--zdl-text);
+}
+
+.slidev-layout h1 { font-size: var(--zdl-text-2xl); }
+.slidev-layout h2 { font-size: var(--zdl-text-xl); }
+.slidev-layout h3 { font-size: var(--zdl-text-lg); }
+.slidev-layout h4 { font-size: var(--zdl-text-md); }
+
+/* Links */
+.slidev-layout a {
+  color: var(--zdl-color-aura);
+  text-decoration: none;
+  border-bottom: var(--zdl-border-medium) solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.slidev-layout a:hover {
+  color: var(--zdl-color-spark);
+  border-bottom-color: var(--zdl-color-spark);
+}
+
+/* Lists */
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: var(--zdl-space-6);
+}
+
+.slidev-layout li {
+  margin-bottom: var(--zdl-space-2);
+  line-height: var(--zdl-leading-normal);
+}
+
+.slidev-layout li::marker {
+  color: var(--zdl-color-aura);
+}
+
+/* Blockquotes */
+.slidev-layout blockquote {
+  border-left: var(--zdl-border-stamp) solid var(--zdl-color-aura);
+  padding: var(--zdl-space-4) var(--zdl-space-6);
+  margin: var(--zdl-space-4) 0;
+  color: var(--zdl-text-muted);
+  font-style: italic;
+  font-size: var(--zdl-text-md);
+}
+
+/* Horizontal rules */
+.slidev-layout hr {
+  border: none;
+  height: var(--zdl-border-stamp);
+  background: var(--zdl-color-aura);
+  width: 48px;
+  margin: var(--zdl-space-8) 0;
+}
+
+/* Tables */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--zdl-border-stamp) solid var(--zdl-text);
+  box-shadow: var(--zdl-shadow-stamp);
+}
+
+.slidev-layout th {
+  background: var(--zdl-text);
+  color: var(--zdl-bg);
+  text-transform: uppercase;
+  letter-spacing: var(--zdl-tracking-stamp);
+  font-weight: var(--zdl-weight-medium);
+  font-size: var(--zdl-text-sm);
+  padding: var(--zdl-space-3) var(--zdl-space-4);
+  text-align: left;
+}
+
+.slidev-layout td {
+  padding: var(--zdl-space-3) var(--zdl-space-4);
+  border-bottom: var(--zdl-border-thin) solid var(--zdl-border);
+}
+
+/* Strong and emphasis */
+.slidev-layout strong {
+  font-weight: var(--zdl-weight-bold);
+  color: var(--zdl-text);
+}
+
+.slidev-layout em {
+  color: var(--zdl-text-muted);
+}
+
+/* Inline code */
+.slidev-layout :not(pre) > code {
+  font-family: var(--zdl-font-mono);
+  font-size: 0.875em;
+  background: var(--zdl-border);
+  padding: 2px 6px;
+  border: var(--zdl-border-thin) solid var(--zdl-text);
+}
+
+/* Images inside slides get stamp treatment */
+.slidev-layout img:not(.no-stamp) {
+  border: var(--zdl-border-stamp) solid var(--zdl-text);
+  box-shadow: var(--zdl-shadow-stamp);
+}
+
+/* Paragraphs */
+.slidev-layout p {
+  margin-bottom: var(--zdl-space-4);
+  line-height: var(--zdl-leading-normal);
+}
+
+.slidev-layout p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "slidev-theme-zdl",
+  "version": "0.1.0",
+  "description": "A neo-brutalist Slidev theme based on the zen design labs design system",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "neo-brutalist",
+    "zen-design-labs"
+  ],
+  "scripts": {
+    "dev": "slidev example.md",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.0.0",
+    "@slidev/theme-default": "latest"
+  },
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Space Grotesk",
+        "mono": "Space Mono",
+        "weights": "300,400,500,600,700"
+      }
+    }
+  }
+}

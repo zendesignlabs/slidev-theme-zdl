@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="128" viewBox="0 0 512 128">
+  <rect width="512" height="128" fill="#FFFEF9"/>
+  <g transform="translate(90, 18)">
+    <!-- Shadow -->
+    <rect x="6" y="6" width="320" height="86" fill="#0F0E0C" rx="0"/>
+    <!-- Box -->
+    <rect x="0" y="0" width="320" height="86" fill="#FFFEF9" stroke="#0F0E0C" stroke-width="3" rx="0"/>
+    <!-- ZDL -->
+    <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="36" fill="#0F0E0C">ZDL</text>
+    <!-- Divider -->
+    <rect x="118" y="24" width="3" height="36" rx="2" fill="#7B61FF"/>
+    <!-- ZEN DESIGN -->
+    <text x="134" y="38" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="12" letter-spacing="2.5" fill="#5A5850">ZEN DESIGN</text>
+    <!-- LABS -->
+    <text x="134" y="60" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="12" letter-spacing="2.5" fill="#5A5850">LABS</text>
+    <!-- Dots -->
+    <circle cx="284" cy="28" r="5" fill="#E85D3A"/>
+    <circle cx="284" cy="43" r="5" fill="#FFB800"/>
+    <circle cx="284" cy="58" r="5" fill="#7B61FF"/>
+  </g>
+</svg>
